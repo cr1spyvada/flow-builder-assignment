@@ -106,7 +106,7 @@ const fields = computed(() => {
         <div class="space-y-1">
           <label class="block text-sm font-semibold text-slate-700">Node Name</label>
           <input 
-            :value="selectedNode.data.label"
+            :value="selectedNode.data?.label"
             @input="e => store.updateNodeData(selectedNode!.id, { label: (e.target as HTMLInputElement).value })"
             class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-400 focus:border-primary-400 outline-none transition-all text-sm font-medium"
             placeholder="e.g. Welcome Email"
