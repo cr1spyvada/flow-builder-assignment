@@ -1,0 +1,24 @@
+{
+  "nodes": [
+    {
+      "id": "trigger-1",
+      "type": "trigger_manual",
+      "position": { "x": 100, "y": 200 },
+      "data": { "label": "MANUAL TRIGGER", "config": {}, "status": "idle" }
+    },
+    {
+      "id": "action-1",
+      "type": "action_email",
+      "position": { "x": 400, "y": 200 },
+      "data": { 
+        "label": "SEND EMAIL", 
+        "config": { "to": "user@example.com", "subject": "Welcome", "body": "Hello!" }, 
+        "status": "idle" 
+      }
+    }
+  ],
+  "edges": [
+    { "id": "e1-2", "source": "trigger-1", "target": "action-1" }
+  ],
+  "viewport": { "x": 0, "y": 0, "zoom": 1 }
+}
